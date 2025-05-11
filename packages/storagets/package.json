@@ -1,0 +1,56 @@
+{
+  "name": "storagets",
+  "author": {
+    "name": "Arash Ghorban",
+    "url": "https://github.com/0x0arash"
+  },
+  "description": "A typesafe localstorage manager for React and Next.js applications.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/0x0arash/storagets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x0arash/storagets.git",
+    "directory": "packages/storagets"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "reactjs",
+    "reactjs library",
+    "reactjs storage",
+    "typescript",
+    "localstorage",
+    "storage",
+    "storage library",
+    "storage manager",
+    "typesafe",
+    "validation",
+    "typed storage",
+    "typed localstorage"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@storagets/eslint-config": "workspace:*",
+    "@storagets/typescript-config": "workspace:*",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
