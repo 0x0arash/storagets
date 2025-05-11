@@ -13,17 +13,17 @@ A type-safe localStorage wrapper for React applications with built-in validation
 ## Installation
 
 ```bash
-npm install storagets
+npm install @arashgh/storagets
 # or
-yarn add storagets
+yarn add @arashgh/storagets
 # or
-pnpm add storagets
+pnpm add @arashgh/storagets
 ```
 
 ## Basic Usage
 
 ```tsx
-import { useStorageTS } from "storagets";
+import { useStorageTS } from "@arashgh/storagets";
 
 function Counter() {
   const [storage, setStorage] = useStorageTS("my-counter", {
@@ -102,7 +102,7 @@ function Settings() {
 
 ```tsx
 import { z } from "zod";
-import { useStorageTS } from "storagets";
+import { useStorageTS } from "@arashgh/storagets";
 
 const UserSchema = z.object({
   name: z.string().min(2),
